@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+	<form data-hullahopring="hej" class="contactForm" novalidate>
+		<h2>Kontakt</h2>
+		<label>
+			Navn
+			<input type="text" name="name" data-errormsg="Skriv dit navn" required>
+			<span class="statusMessage"></span>
+		</label>
+		<label>
+			E-mail
+			<input type="email" name="email" data-errormsg="Skriv en ordentlig email adresse..." required>
+			<span class="statusMessage"></span>
+		</label>
+		<label>
+			Telefon
+			<input type="tel" name="phone" minlength="12" maxlength="16" required>
+			<span class="statusMessage"></span>
+		</label>
+		<label>
+			Besked
+			<textarea name="message" required></textarea>
+			<span class="statusMessage"></span>
+		</label>
+		<button type="submit">Send</button>
+	</form>
+	<script defer src="/app.js"></script>
+</body>
+</html>
